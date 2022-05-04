@@ -26,6 +26,7 @@ namespace ProyectoDataBase
 
             bool bandera = false;
             string instruccion="";
+            string path = @"c:\";
 
 
 
@@ -48,7 +49,7 @@ namespace ProyectoDataBase
                       
 
                         // Especificar la ruta.
-                        string path = @"c:\"+nombre;
+                       path = @"c:\"+nombre;
 
                         try
                         {
@@ -63,7 +64,7 @@ namespace ProyectoDataBase
 
                             // intenta crear el directorio.
                             DirectoryInfo di = Directory.CreateDirectory(path);
-                            Console.WriteLine("La base de datos fu creada con exito.", Directory.GetCreationTime(path));
+                            Console.WriteLine("La base de datos fue creada con exito.", Directory.GetCreationTime(path));
                             Console.ReadKey();
 
                            
@@ -81,7 +82,7 @@ namespace ProyectoDataBase
                         string nombre = instruccion.Substring(11);
 
                         // Especificar la ruta.
-                        string path = @"c:\" + nombre;
+                        path = @"c:\" + nombre;
 
                         //Borra el directorio
                         Directory.Delete(path);
@@ -89,6 +90,18 @@ namespace ProyectoDataBase
                         Console.ReadKey();
                         // Console.WriteLine("Ingresa un comando valido");
                         //Console.ReadKey();
+                    }else if(instruccion.Contains("muestra bases")) 
+                    {
+
+                        // DirectoryInfo di = new DirectoryInfo(path);
+                        string[] folders = Directory.GetDirectories(path);
+                        //Console.WriteLine("No search pattern returns:");
+                        foreach (string f in folders)
+                        {
+                            Console.WriteLine("> " + f.Substring(3)); // Mostramos las carpetas en la consola
+                            
+                        }
+                        Console.ReadKey();
                     }
 
 
