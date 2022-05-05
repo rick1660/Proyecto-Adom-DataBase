@@ -26,9 +26,28 @@ namespace ProyectoDataBase
 
             bool bandera = false;
             string instruccion="";
-            string path = @"c:\";
+
+            string path = @"c:\bases";
+
+            if (Directory.Exists(path))
+            {
+              
+
+            }
+            else 
+            {
+                DirectoryInfo di = Directory.CreateDirectory(path);
+          
+
+            }
 
 
+            // intenta crear el directorio.
+            
+
+
+
+       
 
             try 
             {
@@ -49,7 +68,7 @@ namespace ProyectoDataBase
                       
 
                         // Especificar la ruta.
-                       path = @"c:\"+nombre;
+                       path = ""+nombre;
 
                         try
                         {
@@ -98,7 +117,7 @@ namespace ProyectoDataBase
                         //Console.WriteLine("No search pattern returns:");
                         foreach (string f in folders)
                         {
-                            Console.WriteLine("> " + f.Substring(3)); // Mostramos las carpetas en la consola
+                            Console.WriteLine(""+ f.Substring(3)); // Mostramos las carpetas en la consola
                             
                         }
                         Console.ReadKey();
