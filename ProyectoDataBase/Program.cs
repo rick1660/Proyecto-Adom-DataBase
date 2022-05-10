@@ -9,13 +9,7 @@ namespace ProyectoDataBase
 {
     class Program
     {
-        //Metodo para sacar el nombre
-        string Name(string instruccion)
-        {
-            // Store input argument in a local variable.
-            //int input = i;
-          return "";
-        }
+    
 
 
         static void Main(string[] args)
@@ -27,7 +21,7 @@ namespace ProyectoDataBase
             bool bandera = false;
             string instruccion="";
 
-            string path = @"c:\bases";
+            string path = @"c:\bases\";
 
             if (Directory.Exists(path))
             {
@@ -37,7 +31,6 @@ namespace ProyectoDataBase
             else 
             {
                 DirectoryInfo di = Directory.CreateDirectory(path);
-          
 
             }
 
@@ -55,20 +48,22 @@ namespace ProyectoDataBase
                 {
 
                     System.Console.Clear();
-
+                    string nombre="";
+                    path = @"c:\bases\";
 
                     Console.WriteLine("Ingresa un comando");
                     instruccion = Console.ReadLine();
-
+                    //crea base
                     if (instruccion.Contains("crea base"))
                     {
 
-                        string nombre = instruccion.Substring(10);
+                         nombre = instruccion.Substring(10);
 
                       
-
+                        
                         // Especificar la ruta.
-                       path = ""+nombre;
+
+                       path = path + nombre;
 
                         try
                         {
@@ -77,14 +72,17 @@ namespace ProyectoDataBase
                             {
                                 Console.WriteLine("El directorio ya existe.");
                                 Console.ReadKey();
-                                return;
+                               
 
+                            }else 
+                            {
+                                // intenta crear el directorio.
+                                DirectoryInfo di = Directory.CreateDirectory(path);
+                                Console.WriteLine("La base de datos fue creada con exito.", Directory.GetCreationTime(path));
+                                Console.ReadKey();
                             }
 
-                            // intenta crear el directorio.
-                            DirectoryInfo di = Directory.CreateDirectory(path);
-                            Console.WriteLine("La base de datos fue creada con exito.", Directory.GetCreationTime(path));
-                            Console.ReadKey();
+                            
 
                            
                             
@@ -95,13 +93,13 @@ namespace ProyectoDataBase
                             Console.ReadKey();
                         }
                        
-                    }
+                    }//borra base
                     else if(instruccion.Contains("borra base"))
                     {
-                        string nombre = instruccion.Substring(11);
+                        nombre = instruccion.Substring(11);
 
                         // Especificar la ruta.
-                        path = @"c:\" + nombre;
+                        path = path + nombre;
 
                         //Borra el directorio
                         Directory.Delete(path);
@@ -109,7 +107,7 @@ namespace ProyectoDataBase
                         Console.ReadKey();
                         // Console.WriteLine("Ingresa un comando valido");
                         //Console.ReadKey();
-                    }else if(instruccion.Contains("muestra bases")) 
+                    }else if(instruccion.Contains("muestra bases"))  // muestra bases
                     {
 
                         // DirectoryInfo di = new DirectoryInfo(path);
@@ -117,7 +115,7 @@ namespace ProyectoDataBase
                         //Console.WriteLine("No search pattern returns:");
                         foreach (string f in folders)
                         {
-                            Console.WriteLine(""+ f.Substring(3)); // Mostramos las carpetas en la consola
+                            Console.WriteLine(""+ f.Substring(9)); // Mostramos las carpetas en la consola
                             
                         }
                         Console.ReadKey();
@@ -127,8 +125,7 @@ namespace ProyectoDataBase
 
                 }
             }
-            
-            catch(Exception e)
+            catch(Exception )
             {
                
               
