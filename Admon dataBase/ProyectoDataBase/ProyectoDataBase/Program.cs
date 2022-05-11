@@ -52,7 +52,7 @@ namespace ProyectoDataBase
 
                     Console.WriteLine("Ingresa un comando");
                     instruccion = Console.ReadLine();
-
+                    //Crea base
                     if (instruccion.Contains("crea base"))
                     {
 
@@ -93,6 +93,8 @@ namespace ProyectoDataBase
                         }
                        
                     }
+
+                    //Borra base
                     else if(instruccion.Contains("borra base"))
                     {
                         string nombre = instruccion.Substring(11);
@@ -106,6 +108,7 @@ namespace ProyectoDataBase
                         Console.ReadKey();
                         // Console.WriteLine("Ingresa un comando valido");
                         //Console.ReadKey();
+                    //Muestra base
                     }else if(instruccion.Contains("muestra bases")) 
                     {
 
