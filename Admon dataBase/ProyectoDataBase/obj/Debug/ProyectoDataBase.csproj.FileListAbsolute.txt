@@ -12,3 +12,10 @@ C:\Users\Laboratorio\Documents\GitHub\Proyecto-Adom-DataBase\Admon dataBase\Proy
 C:\Users\Laboratorio\Documents\GitHub\Proyecto-Adom-DataBase\Admon dataBase\ProyectoDataBase\obj\Debug\ProyectoDataBase.csproj.CoreCompileInputs.cache
 C:\Users\Laboratorio\Documents\GitHub\Proyecto-Adom-DataBase\Admon dataBase\ProyectoDataBase\obj\Debug\ProyectoDataBase.exe
 C:\Users\Laboratorio\Documents\GitHub\Proyecto-Adom-DataBase\Admon dataBase\ProyectoDataBase\obj\Debug\ProyectoDataBase.pdb
+D:\Trabajos\semestre 12\Admon dataBase\ProyectoDataBase\Proyecto-Adom-DataBase\Admon dataBase\ProyectoDataBase\bin\Debug\ProyectoDataBase.exe.config
+D:\Trabajos\semestre 12\Admon dataBase\ProyectoDataBase\Proyecto-Adom-DataBase\Admon dataBase\ProyectoDataBase\bin\Debug\ProyectoDataBase.exe
+D:\Trabajos\semestre 12\Admon dataBase\ProyectoDataBase\Proyecto-Adom-DataBase\Admon dataBase\ProyectoDataBase\bin\Debug\ProyectoDataBase.pdb
+D:\Trabajos\semestre 12\Admon dataBase\ProyectoDataBase\Proyecto-Adom-DataBase\Admon dataBase\ProyectoDataBase\obj\Debug\ProyectoDataBase.csprojAssemblyReference.cache
+D:\Trabajos\semestre 12\Admon dataBase\ProyectoDataBase\Proyecto-Adom-DataBase\Admon dataBase\ProyectoDataBase\obj\Debug\ProyectoDataBase.csproj.CoreCompileInputs.cache
+D:\Trabajos\semestre 12\Admon dataBase\ProyectoDataBase\Proyecto-Adom-DataBase\Admon dataBase\ProyectoDataBase\obj\Debug\ProyectoDataBase.exe
+D:\Trabajos\semestre 12\Admon dataBase\ProyectoDataBase\Proyecto-Adom-DataBase\Admon dataBase\ProyectoDataBase\obj\Debug\ProyectoDataBase.pdb
