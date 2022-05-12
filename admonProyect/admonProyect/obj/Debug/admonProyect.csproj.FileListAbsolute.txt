@@ -1,0 +1,7 @@
+C:\Users\Laboratorio\source\repos\admonProyect\admonProyect\obj\Debug\admonProyect.csproj.AssemblyReference.cache
+C:\Users\Laboratorio\source\repos\admonProyect\admonProyect\obj\Debug\admonProyect.csproj.CoreCompileInputs.cache
+C:\Users\Laboratorio\source\repos\admonProyect\admonProyect\bin\Debug\admonProyect.exe.config
+C:\Users\Laboratorio\source\repos\admonProyect\admonProyect\bin\Debug\admonProyect.exe
+C:\Users\Laboratorio\source\repos\admonProyect\admonProyect\bin\Debug\admonProyect.pdb
+C:\Users\Laboratorio\source\repos\admonProyect\admonProyect\obj\Debug\admonProyect.exe
+C:\Users\Laboratorio\source\repos\admonProyect\admonProyect\obj\Debug\admonProyect.pdb
