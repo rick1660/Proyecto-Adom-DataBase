@@ -12,14 +12,15 @@ namespace admonProyect
         {
 
 
-
             //variables globales
             bool bandera = false;
             string instruccion = "";
 
+            //variable para ver si desea insertar otro  campo
+            char respuesta;
             string path = @"c:\bases\";
             string usabase = "";
-           // bool resultIsMatch;
+            // bool resultIsMatch;
 
             if (Directory.Exists(path))
             {
@@ -155,6 +156,7 @@ namespace admonProyect
                     }
                     else if (instruccion.Contains("crea tabla"))
                     {
+
                         if (usabase == "")
                         {
                             Console.WriteLine("Primero debes de poner en uso una base de datos");
@@ -162,40 +164,66 @@ namespace admonProyect
                         }
                         else
                         {
-                            string nombre = instruccion.Substring(10);
-                            path = path + usabase;
+                            string nombre = instruccion.Substring(11);
+                            path = @"c:\bases\" + usabase + "\\" + nombre;
 
                             try
                             {
                                 // crea un archivo o sobreescribe si en verdad existe.
-                                if (Directory.Exists(path))
+                                if (File.Exists(path + ".est"))
                                 {
                                     Console.WriteLine("el nombre de la tabla ya esta en uso");
+                                    Console.ReadKey();
                                 }
                                 else
                                 {
-                                    using (FileStream fs = File.Create(path + "\\" + nombre + ".est"))
+
+                                    using (StreamWriter writetext = new StreamWriter(path + ".est"))
                                     {
-                                        //do
-                                        //{
-                                        //   string estructura = Console.ReadLine();
-                                        //   resultIsMatch = Regex.IsMatch(estructura, @"(a-z)");
-                                        //   if(resultIsMatch == false) 
-                                        //   {
-                                        //       Console.WriteLine("La estructura debe ser: Nombre campo1, tipo, longitud \n, Nombre campo2, tipo, longitud \n, Nombre campon, tipo, longitud");
-                                        //       Console.ReadKey();
+                                       // writetext.WriteLine(Text);
+                                       // Console.WriteLine("creada con exito");
+                                       // Console.Read();
+                                        do
+                                        {
+                                            
+                                            Console.WriteLine("Ingresa los campos ");
+                                            // byte[] miinfo = new UTF8Encoding(true).GetBytes(Console.ReadLine() + "\n");
+                                            // Add some information to the file.
+                                            // writetext.Write(miinfo, 0, miinfo.Length);
+                                            //Console.WriteLine("creada con exito");
+                                            // Console.Read();
 
-                                        //  }
-                                        //  } while (resultIsMatch == true);
+                                            string campo = Console.ReadLine();
+                                            writetext.WriteLine(campo);
+                                            Console.Clear();
+                                            Console.WriteLine("¿Desea agregar otro campo?");
+                                            Console.WriteLine("s) si");
+                                            Console.WriteLine("n) no");
+                                            respuesta = char.Parse(Console.ReadLine());
+                                            Console.Clear();
+
+                                        }
+                                        while (respuesta == 's');
+
+                                        writetext.Close();
+
+
+                                    }
 
 
 
-                                        Byte[] miinfo = new UTF8Encoding(true).GetBytes("This is some text in the file.");
-                                        // Add some information to the file.
-                                        fs.Write(miinfo, 0, miinfo.Length);
+
+                                    using (StreamWriter writetext = new StreamWriter(path + ".dat")) 
+                                    { 
+
+                                        //Close the file
+                                        writetext.Close();
                                     }
 
                                 }
+
+
+
 
 
 
@@ -211,6 +239,41 @@ namespace admonProyect
 
 
                     }
+                    else if (instruccion.Contains("inserta en"))
+                    {
+
+                        string nombre = instruccion.Substring(11);
+                        path = @"c:\bases\" + usabase;
+
+
+                       // String line;
+                        try
+                        {
+
+
+                            using (StreamReader readtext = new StreamReader(path + "\\"+nombre+".dat"))
+                            {
+                                string line;
+                                // Read and display lines from the file until the end of
+                                // the file is reached.
+                                while ((line = readtext.ReadLine()) != null)
+                                {
+                                    Console.WriteLine(line);
+                                }
+                            }
+
+                           
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine("Exception: " + e.Message);
+                            Console.ReadKey();
+                        }
+                       
+
+
+                    }
+
 
 
 
