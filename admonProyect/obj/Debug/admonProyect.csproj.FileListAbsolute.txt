@@ -1,0 +1,15 @@
+C:\Users\Laboratorio\source\repos\admonProyect\admonProyect\obj\Debug\admonProyect.csproj.AssemblyReference.cache
+C:\Users\Laboratorio\source\repos\admonProyect\admonProyect\obj\Debug\admonProyect.csproj.CoreCompileInputs.cache
+C:\Users\Laboratorio\source\repos\admonProyect\admonProyect\bin\Debug\admonProyect.exe.config
+C:\Users\Laboratorio\source\repos\admonProyect\admonProyect\bin\Debug\admonProyect.exe
+C:\Users\Laboratorio\source\repos\admonProyect\admonProyect\bin\Debug\admonProyect.pdb
+C:\Users\Laboratorio\source\repos\admonProyect\admonProyect\obj\Debug\admonProyect.exe
+C:\Users\Laboratorio\source\repos\admonProyect\admonProyect\obj\Debug\admonProyect.pdb
+D:\Trabajos\semestre 12\Admon dataBase\Proyecto2\Proyecto-Adom-DataBase\admonProyect\admonProyect\bin\Debug\admonProyect.exe.config
+D:\Trabajos\semestre 12\Admon dataBase\Proyecto2\Proyecto-Adom-DataBase\admonProyect\admonProyect\bin\Debug\admonProyect.exe
+D:\Trabajos\semestre 12\Admon dataBase\Proyecto2\Proyecto-Adom-DataBase\admonProyect\admonProyect\bin\Debug\admonProyect.pdb
+D:\Trabajos\semestre 12\Admon dataBase\Proyecto2\Proyecto-Adom-DataBase\admonProyect\admonProyect\obj\Debug\admonProyect.csproj.AssemblyReference.cache
+D:\Trabajos\semestre 12\Admon dataBase\Proyecto2\Proyecto-Adom-DataBase\admonProyect\admonProyect\obj\Debug\admonProyect.csproj.SuggestedBindingRedirects.cache
+D:\Trabajos\semestre 12\Admon dataBase\Proyecto2\Proyecto-Adom-DataBase\admonProyect\admonProyect\obj\Debug\admonProyect.csproj.CoreCompileInputs.cache
+D:\Trabajos\semestre 12\Admon dataBase\Proyecto2\Proyecto-Adom-DataBase\admonProyect\admonProyect\obj\Debug\admonProyect.exe
+D:\Trabajos\semestre 12\Admon dataBase\Proyecto2\Proyecto-Adom-DataBase\admonProyect\admonProyect\obj\Debug\admonProyect.pdb
